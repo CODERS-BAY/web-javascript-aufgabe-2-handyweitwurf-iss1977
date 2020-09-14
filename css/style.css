@@ -1,0 +1,125 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+  /*----  Styling the play container ------*/
+
+  .my-play-container{
+    min-height: 100vh;
+    overflow: hidden;
+    background: rgba(255,255, 255, 0.4);
+  }
+
+
+  .my-row-scoreboard{
+    height: 10vh;
+    background: rgba(255, 255, 255, 0.4);
+    margin: 0;
+    padding: 0;
+    border: 2px darkgray solid;
+  }
+
+  .my-parallax-container-1{
+    min-height: 0;
+    height: 2vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  .my-parallax-container-1 .parallax{
+    height: max-content;
+  }
+
+  .my-play-ground{
+    height: 60vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+
+  .my-settings-4-throw{
+    min-height: 26vh;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  /* -- Styling the my-row-scoreboard section*/
+  .my-row-scoreboard{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .my-scoreboard-right-item , .my-scoreboard-left-item{
+    display: flex;
+    align-items: center;
+  }
+  .my-scoreboard-right-item{
+      justify-content: flex-end;
+  }
+
+/*  --   Styling the settings container ----*/
+.my-settings-4-throw{
+  border: 2px darkgray solid;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}

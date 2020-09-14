@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Parallax Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+
+  <!--Navigation-->
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Handywurf</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#logo-container">Home</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#logo-container">Home</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">Handywurf</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Let's kill the monster</h5>
+        </div>
+        <div class="row center">
+          <a href="http://materializecss.com/getting-started.html" id="download-button"
+            class="btn-large waves-effect waves-light teal lighten-1">Start</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+
+  <div class="container my-play-container">
+
+
+    <!--   First row with the score   -->
+    <div class="row my-row-scoreboard">
+      <div class="col s12 m6 left-align my-scoreboard-left-item">
+        <span id="wurf-anzahl">Wurf : 2 von 3</span>
+      </div>
+      <div class="col s12 m6 right-align my-scoreboard-right-item">
+        <span id="wurf-treffer">Treffer : 2 von 3 </span>
+      </div>
+    </div>
+
+    <!-- This is a spacer mit parallax -->
+    <div class="parallax-container my-parallax-container-1">
+
+      <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+
+    </div>
+
+    <!--This comment has been added after stageing-->
+    <!-- this is the container for you and your monster*/-->
+    <div class="row my-play-ground" id="id-my-play-ground">
+    </div>
+
+    <!-- This is a spacer mit parallax -->
+    <div class="parallax-container my-parallax-container-1">
+      <div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+    </div>
+
+    <!-- -- Here are the settings for the throw -- -->
+    <div class="row my-settings-4-throw">
+      <form action="#">
+        <div class="col s12 m8">
+          <div class="wurf-winkel">
+            <p>Wurfwinkel</p>
+
+            <p class="range-field">
+              <input type="range" id="id-wurf-winkel" min="0" max="90"  />
+            </p>
+
+          </div>
+          <div class="wurf-staerke">
+            <p>Wurfstärke</p>
+            <p class="range-field">
+              <input type="range" id="id-wurf-staerke" min="0" max="100"  />
+            </p>
+
+          </div>
+        </div>
+      </form>
+      <div class="s12 m4">
+        <a href="#" class="btn-large waves-effect waves-light teal lighten-1">Start</a>
+      </div>
+    </div>
+
+  </div>
+
+
+  
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Handywurf Inc.</h5>
+          <p class="grey-text text-lighten-4">This is a javascript example for Codersbay.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Setup enviroment</a></li>
+
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Home</h5>
+          <ul>
+            <li><a class="white-text" href="#logo-container">UP</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
